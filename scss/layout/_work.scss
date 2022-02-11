@@ -1,0 +1,21 @@
+.work-list__item {
+  --card-item: 3;
+}
+
+.work-cont__img {
+  position: relative;
+}
+
+.work-cont__img-text {
+  position: absolute;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-color);
+  background-color: var(--work-imgtext-bg);
+  width: 100%;
+  bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

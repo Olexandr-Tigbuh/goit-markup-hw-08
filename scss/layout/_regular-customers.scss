@@ -1,0 +1,27 @@
+.regular-customer__link {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-grey-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: color var(--transition);
+  outline: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.regular-customer__icon {
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.regular-customer__item {
+  --card-item: 6;
+}

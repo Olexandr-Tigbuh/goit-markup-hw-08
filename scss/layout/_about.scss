@@ -1,0 +1,29 @@
+.about {
+  background: var(--lighter-color);
+  text-align: center;
+}
+
+.about-item {
+  background-color: var(--light-color);
+  box-shadow: var(--about-item-shadow);
+}
+
+.about-item__title {
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+
+.about-item__after-title {
+  margin-bottom: 16px;
+}
+
+.about-item__after-title,
+.about-item__title {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.about-wrapper {
+  padding: 30px;
+}
