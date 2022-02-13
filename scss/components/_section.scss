@@ -5,8 +5,18 @@
   letter-spacing: 0.03em;
   color: var(--dark-color);
   margin-bottom: 52px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+  }
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

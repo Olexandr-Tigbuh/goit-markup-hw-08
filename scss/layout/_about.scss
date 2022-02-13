@@ -6,8 +6,16 @@
 .about-item {
   background-color: var(--light-color);
   box-shadow: var(--about-item-shadow);
+  @include tel {
+    --card-item: 1;
+  }
+  @include tab {
+    --card-item: 2;
+  }
+  @include desc {
+    --card-item: 4;
+  }
 }
-
 .about-item__title {
   font-weight: 500;
   color: var(--dark-color);
@@ -26,4 +34,5 @@
 
 .about-wrapper {
   padding: 30px;
+  margin-bottom: 30px;
 }

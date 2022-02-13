@@ -24,4 +24,13 @@
 
 .regular-customer__item {
   --card-item: 6;
+  @media screen and (min-width: 320px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 768px) {
+    --card-item: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 6;
+  }
 }
