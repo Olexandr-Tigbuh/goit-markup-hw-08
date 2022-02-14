@@ -406,6 +406,13 @@ body {
   margin-right: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .header .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .header__logo {
   color: var(--text-color);
 }
@@ -449,6 +456,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header__container {
+    margin-right: 15px;
+  }
+}
+
 .site-nav__list {
   color: var(--dark-color);
   display: flex;
@@ -466,9 +479,14 @@ body {
 
 .contacts__list {
   display: flex;
-  align-items: center;
   margin-left: auto;
-  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -476,7 +494,6 @@ body {
     flex-direction: column;
     margin-left: auto;
     align-items: flex-start;
-    padding: 0;
   }
 }
 
@@ -557,6 +574,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mobile-menu__container {
+  padding: 50px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
 }
 
 .mob-menu__button-close {
@@ -946,6 +973,20 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer .logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-list {
+    justify-content: center;
+  }
+}
+
 .footer-list__link {
   color: var(--footer-grey-link);
   transition: color 250ms var(--transition);
@@ -967,22 +1008,87 @@ body {
   color: var(--light-color);
 }
 
-.footer-wrapper:not(:last-child) {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-wrapper:not(:last-child) {
+    margin-right: 70px;
+  }
 }
 
 .footer-wrapper:not(:last-child) {
   margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+}
+
 /*-------------*/
 .footer__container {
-  display: flex;
   align-items: baseline;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    flex-direction: unset;
+    align-items: baseline;
+  }
+}
+
 .footer-social-container {
-  margin-left: 70px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__container--top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container--top {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__container--botom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__title {
@@ -993,6 +1099,20 @@ body {
   color: var(--light-color);
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-list__link {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer .social__link {
@@ -1034,9 +1154,31 @@ body {
   margin-left: 10px;
 }
 
-.subscribe {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio-button {
