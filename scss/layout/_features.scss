@@ -6,7 +6,7 @@
 }
 
 .features-list__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     --card-item: 1;
   }
   @media screen and (min-width: 768px) {
@@ -24,6 +24,11 @@
   text-transform: uppercase;
   color: var(--dark-color);
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .features-group__list {
   display: flex;

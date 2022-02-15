@@ -792,7 +792,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .features-list__item {
     --card-item: 1;
   }
@@ -817,6 +817,14 @@ body {
   text-transform: uppercase;
   color: var(--dark-color);
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-group__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features-group__list {
@@ -870,6 +878,8 @@ body {
 .about {
   background: var(--lighter-color);
   text-align: center;
+  width: calc(100% / var(--card-item) - 30px);
+  --card-item: 1;
 }
 
 .about-item {
@@ -941,11 +951,13 @@ body {
   color: var(--accent-color);
 }
 
-.regular-customer__item {
-  --card-item: 6;
+@media screen and (max-width: 479px) {
+  .regular-customer__item {
+    --card-item: 1;
+  }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .regular-customer__item {
     --card-item: 2;
   }
@@ -1032,7 +1044,6 @@ body {
   .footer-wrapper {
     display: flex;
     margin-bottom: 0px;
-    margin-left: auto;
   }
 }
 
@@ -1091,6 +1102,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1199px) {
+  .footer__container--botom {
+    margin-left: auto;
+  }
+}
+
 .footer__title {
   font-size: 14px;
   line-height: 1.14;
@@ -1126,7 +1143,7 @@ body {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   border: 1px solid var(--input-footer-border);
@@ -1143,6 +1160,13 @@ body {
 
 .subscribe__input::placeholder {
   color: var(--input-footer-color);
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+    width: 358px;
+  }
 }
 
 .subscribe-btn:active,
@@ -1164,6 +1188,9 @@ body {
 @media screen and (min-width: 768px) {
   .subscribe {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -1171,13 +1198,9 @@ body {
   .subscribe {
     display: flex;
     align-items: baseline;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .subscribe__input {
-    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: initial;
+    width: 100%;
   }
 }
 

@@ -1,6 +1,8 @@
 .about {
   background: var(--lighter-color);
   text-align: center;
+  width: calc(100% / var(--card-item) - 30px);
+  --card-item: 1;
 }
 
 .about-item {
