@@ -32,3 +32,12 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
+.projects-link {
+  @media screen and (max-width: 479px) {
+    --card-item: 1;
+  }
+  @media screen and (min-width: 480px) {
+    --card-item: 2;
+  }
+}

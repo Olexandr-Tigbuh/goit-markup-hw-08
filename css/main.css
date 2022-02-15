@@ -641,7 +641,7 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--dark-color);
   margin-right: 10px;
   border-right: 1 px solid var(--input-border-color);
 }
@@ -1178,7 +1178,7 @@ body {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .subscribe {
     flex-direction: column;
     align-items: center;
@@ -1236,6 +1236,18 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 479px) {
+  .projects-link {
+    --card-item: 1;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .projects-link {
+    --card-item: 2;
+  }
 }
 
 .projects-item {
