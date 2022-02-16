@@ -15,10 +15,6 @@
 
 .header-naw__wrapper {
   display: flex;
-  @media screen and (max-width: 768px) {
-    display: none;
-    width: 768;
-  }
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
@@ -49,8 +45,9 @@
 .site-nav__list {
   color: var(--dark-color);
   display: flex;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-right: 84px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    width: 768;
   }
 }
 
@@ -177,6 +174,10 @@
 .heder-menu_button {
   background-color: transparent;
   border: none;
+  margin-left: auto;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
   &:hover,
   &:focus {
     fill: var(--accent-color);

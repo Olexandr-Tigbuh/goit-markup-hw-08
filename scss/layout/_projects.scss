@@ -1,5 +1,11 @@
 .projects-item {
-  --card-item: 3;
+  --card-item: 1;
+  @include tab {
+    --card-item: 2;
+  }
+  @include desc {
+    --card-item: 3;
+  }
 }
 
 .projects-link:hover .projects-item-text,
@@ -42,9 +48,11 @@
 .projects-wrapper {
   border: 1px solid var(--lighter-color);
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .projects-link {
+  height: 100%;
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--transition);

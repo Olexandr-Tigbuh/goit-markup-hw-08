@@ -207,6 +207,21 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .header .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0px;
@@ -421,13 +436,6 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  .header-naw__wrapper {
-    display: none;
-    width: 768;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .header-naw__wrapper {
     width: 1200px;
@@ -467,9 +475,10 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .site-nav__list {
-    padding-right: 84px;
+    display: none;
+    width: 768;
   }
 }
 
@@ -603,6 +612,10 @@ body {
 .heder-menu_button {
   background-color: transparent;
   border: none;
+  margin-left: auto;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
   transition: var(--transition);
 }
 
@@ -1232,6 +1245,7 @@ body {
   background-color: var(--lighter-color);
   border: none;
   transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
+  margin-top: 15px;
 }
 
 .portfolio-button:hover, .portfolio-button:focus,
@@ -1247,24 +1261,30 @@ body {
 
 .portfolio-button-list {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 479px) {
-  .projects-link {
-    --card-item: 1;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .projects-link {
-    --card-item: 2;
+@media screen and (min-width: 768px) {
+  .portfolio-button-list {
+    justify-content: center;
   }
 }
 
 .projects-item {
-  --card-item: 3;
+  --card-item: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-item {
+    --card-item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    --card-item: 3;
+  }
 }
 
 .projects-link:hover .projects-item-text,
@@ -1310,9 +1330,11 @@ body {
 .projects-wrapper {
   border: 1px solid var(--lighter-color);
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .projects-link {
+  height: 100%;
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--transition);

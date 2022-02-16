@@ -14,6 +14,7 @@
   border: none;
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
+  margin-top: 15px;
   &:hover,
   &:focus,
   .portfolio-current-button {
@@ -29,15 +30,9 @@
 
 .portfolio-button-list {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
-}
-
-.projects-link {
-  @media screen and (max-width: 479px) {
-    --card-item: 1;
-  }
-  @media screen and (min-width: 480px) {
-    --card-item: 2;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
