@@ -52,46 +52,44 @@
                 </button>
             </div>
             <div class="mob-menu is-hidden" data-menu>
-                <div class="conteiner">
-                    <button type="button" class="mob-menu__button-close" data-menu-close>
-                        <svg class="mob-menu__modal-icon" width="40" height="40">
-                            <use href="images/icons.svg#icon-close_px"></use>
-                        </svg>
-                    </button>
-                    <div class="conteiner mob-menu__container">
-                        <div class="mob__top-menu">
-                            <ul class="list mob-menu__list">
-                                <li class="mob-menu__item">
-                                    <a class="link mob-menu__link curent-color" href="./index.html">Студия</a>
-                                </li>
-                                <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
-                                <li class="mob-menu__item"><a class="link mob-menu__link" href="./contacts">Контакты</a></li>
-                            </ul>
-                            <ul class="list mob-contacts">
-                                <li class="mob-contacts__tel-item mob-menu__link">
-                                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-                                </li>
-                                <li class="mob-contacts__mail-item mob-menu__link">
-                                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mob__bootom-menu">
-                            <ul class="mob-social list">
-                                <li class="mob-social__item">
-                                    <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Instagram</a>
-                                </li>
-                                <li class="mob-social__item">
-                                    <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Twitter</a>
-                                </li>
-                                <li class="mob-social__item">
-                                    <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Facebook</a>
-                                </li>
-                                <li class="mob-social__item">
-                                    <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">LinkedIn</a>
-                                </li>
-                            </ul>
-                        </div>
+                <button type="button" class="mob-menu__button-close" data-menu-close>
+                    <svg class="mob-menu__modal-icon" width="40" height="40">
+                        <use href="images/icons.svg#icon-close_px"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu__container">
+                    <div class="mob__top-menu">
+                        <ul class="list mob-menu__list">
+                            <li class="mob-menu__item">
+                                <a class="link mob-menu__link curent-color" href="./index.html">Студия</a>
+                            </li>
+                            <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="mob-menu__item"><a class="link mob-menu__link" href="./contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob__bootom-menu">
+                        <ul class="list mob-contacts">
+                            <li class="mob-contacts__tel-item mob-menu__link">
+                                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-contacts__mail-item mob-menu__link">
+                                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-social list">
+                            <li class="mob-social__item">
+                                <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Instagram</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Twitter</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">Facebook</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link link" href="" target="_blank" rel="noopener norefererr">LinkedIn</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -426,9 +424,9 @@
                         </a>
                         <ul class="list footer-list">
                             <li class="footer-list__item">
-                                <a class="link footer-list__link" href="https://goo.gl/maps/LukTUDe9WhDewyrs6" target="_blank"
+                                <a class="link footer-list__link footer-list__link--white" href="https://goo.gl/maps/LukTUDe9WhDewyrs6" target="_blank"
                                     rel="noopener norefererr">г. Киев,
-                                    пр-т Леси Украинки,26</a>
+                                    пр-т Леси Украинки, 26</a>
                             </li>
                             <li class="footer-list__item">
                                 <a class="link footer-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -472,24 +470,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer__container--botom">
-                    <div class="footer-wrapper">
-                        <h3 class="footer__title">Подпишитесь на рассылку</h3>
-                        <form class="subscribe">
-                            <input 
-                            type="email" 
-                            name="subscribe-email"
-                            class="subscribe__input"
-                            placeholder="E-mail"
-                            required
-                            >
-                            <button type="submit" class="hero__btn ">Подписаться
-                                <svg class="submit-icon" width="24" height="24">
-                                    <use href="images/icons.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+                <div class="footer-wrapper">
+                    <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                    <form class="subscribe">
+                        <input 
+                        type="email" 
+                        name="subscribe-email"
+                        class="subscribe__input"
+                        placeholder="E-mail"
+                        required
+                        >
+                        <button type="submit" class="hero__btn ">Подписаться
+                            <svg class="submit-icon" width="24" height="24">
+                                <use href="images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
